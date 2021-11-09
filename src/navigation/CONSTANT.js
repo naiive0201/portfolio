@@ -1,5 +1,5 @@
 const HOME = '/';
-const DETAIL = 'DETAIL';
+const ABOUT = '/about';
 const NOTFOUND = '*';
 
-export { HOME, DETAIL, NOTFOUND };
+export { HOME, ABOUT, NOTFOUND };
