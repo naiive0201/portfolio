@@ -52,16 +52,20 @@ export default class Header extends React.Component {
         <header
           className={`transition-all transform ${
             this.state.isHeaderHide ? '-translate-y-full' : ''
-          }  fixed top-0 left-0 flex flex-1 flex-row items-center justify-between w-full h-12 bg-dark `}
+          }  fixed top-0 left-0 flex flex-1 flex-row items-center justify-between w-full h-12 bg-dark`}
         >
           <div className="leftDrawer flex" onClick={this.handleDrawerButton}>
-            <span className="material-icons-round text-white p-3">menu</span>
+            <span className="material-icons-round text-white p-3 rounded active:bg-gray-200">
+              menu
+            </span>
           </div>
           <div className="title flex">
             <h2 className="text-white p-3">Hyeonsoo&apos;s Daily Log</h2>
           </div>
           <div className="rightIcon flex">
-            <span className="material-icons-round text-white p-3">search</span>
+            <span className="material-icons-round text-white p-3 rounded active:bg-gray-200">
+              search
+            </span>
           </div>
         </header>
         <div
